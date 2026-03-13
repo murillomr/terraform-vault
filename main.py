@@ -6,25 +6,11 @@ from pathlib import Path
 # Carrega as variáveis do arquivo .env para o sistema
 load_dotenv()
 
-caminho_projeto = Path(__file__).parent.absolute()
-caminho_env = caminho_projeto / ".env"
-
-print(f"A procurar ficheiro em: {caminho_env}")
-
-if caminho_env.exists():
-    load_dotenv(dotenv_path=caminho_env)
-    print("Ficheiro .env encontrado e carregado!")
-else:
-    print("ERRO CRÍTICO: O ficheiro .env não existe nesta pasta!")
-
 # Agora a obtenção dos valores de forma segura
 VAULT_URL = os.getenv("VAULT_URL")
 VAULT_TOKEN = os.getenv("VAULT_TOKEN")
 
 load_dotenv(override=True) # O override força a substituição de qualquer valor padrão
-
-url_teste = os.getenv("VAULT_URL")
-print(f"VALOR REAL DA URL: [{url_teste}]") # Os colchetes ajudam a ver se tem espaços invisíveis
 
 def buscar_segredo_ia():
     try:

@@ -23,7 +23,7 @@ O objetivo é criar um ambiente robusto para o desenvolvimento de aplicações d
 
 ## ✅ Pré-requisitos
 
-Antes de começar, garanta que você tenha as seguintes ferramentas instaladas e configuradas:
+Antes de começar, garanta as seguintes ferramentas instaladas e configuradas:
 
 -   `kubectl` com acesso ao seu cluster Kubernetes.
 -   `terraform` (v1.x ou superior).

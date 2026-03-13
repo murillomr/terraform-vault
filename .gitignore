@@ -1,2 +1,26 @@
+# Variáveis de ambiente 
 .env
+.env.local
+.env.*
+
+# Terraform - Arquivos de Estado (Contêm segredos em texto puro)
 *.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+
+# Terraform - Binários e Plugins
+.terraform/
+.terraform.lock.hcl
+
+# Python - Cache e Ambientes Virtuais
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Logs e arquivos do SO
+*.log
+.DS_Store
+Thumbs.db
